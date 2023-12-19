@@ -13,13 +13,11 @@ import static org.mockito.BDDMockito.given;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
-
-// define a class que vai ser testada - criando um contexto mock que nao chama um server
 @WebMvcTest(BookController.class)
 class BookControllerMvcTests {
 
     @Autowired
-    private MockMvc mockMvc; // testa as chamadas rest em um ambiente mock
+    private MockMvc mockMvc;
 
     @MockBean
     private BookService bookService;
@@ -27,7 +25,6 @@ class BookControllerMvcTests {
     @Test
     void whenGetBookNotExistingThenShouldReturn404() throws Exception {
         String isbn = "73737313940";
-        // simula a chamada do service no controller
         given(bookService.viewBookDetails(isbn)).willThrow(BookNotFoundException.class);
         mockMvc
                 .perform(get("/books/" + isbn))
