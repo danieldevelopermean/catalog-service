@@ -7,7 +7,7 @@ on:
 concurrency: acceptance
 
 env:
-  OWNER: polarbookshop
+  OWNER: danieldevelopermean
   REGISTRY: ghcr.io
   APP_REPO: catalog-service
   DEPLOY_REPO: polar-deployment
