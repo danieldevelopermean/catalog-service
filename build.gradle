@@ -35,6 +35,7 @@ dependencies {
 	implementation 'org.springframework.cloud:spring-cloud-starter-config'
 	implementation 'org.springframework.retry:spring-retry'
 	implementation 'org.flywaydb:flyway-core'
+	implementation 'org.springframework.cloud:spring-cloud-starter-bootstrap'
 
 	runtimeOnly 'io.micrometer:micrometer-registry-prometheus'
 	runtimeOnly "io.opentelemetry.javaagent:opentelemetry-javaagent:${otelVersion}"

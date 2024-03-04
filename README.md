@@ -1,10 +1,5 @@
 # Catalog Service
 
-This application is part of the Polar Bookshop system and provides the functionality for managing
-the books in the bookshop catalog. It's part of the project built in the
-[Cloud Native Spring in Action](https://www.manning.com/books/cloud-native-spring-in-action) book
-by [Thomas Vitale](https://www.thomasvitale.com).
-
 ## REST API
 
 | Endpoint	      | Method   | Req. body  | Status | Resp. body     | Description    		   	     |
@@ -33,5 +28,3 @@ After building the application, you can also run it from the Java CLI:
 ```bash
 java -jar build/libs/catalog-service-0.0.1-SNAPSHOT.jar
 ```
-
-test2
